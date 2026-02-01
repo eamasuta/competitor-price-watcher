@@ -83,3 +83,14 @@
 - 完了条件は Issue の Acceptance Criteria を優先する
 - README は仕様書ではなく「作業俯瞰用ドキュメント」とする
 
+## Automation Rules (for Codex)
+
+- Proceed through the tasks in order.
+- Create **one PR per task** (do not combine tasks).
+- Each PR must satisfy all Acceptance Criteria for that task.
+- After opening a PR, you may continue to the next task automatically.
+- If blocked (e.g., npm install/build/lint/test fails), create a PR that fixes the blocker and **stop**. Describe what’s needed to proceed.
+- In each PR description include:
+  - Completed Task number
+  - Summary of changes
+  - Verification steps (commands)
